@@ -10,5 +10,6 @@
 #define __Fighter__GameStartScene__
 
 #include <iostream>
+#include "cocos2d.h"
 
 #endif /* defined(__Fighter__GameStartScene__) */
