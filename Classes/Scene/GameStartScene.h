@@ -12,4 +12,9 @@
 #include <iostream>
 #include "cocos2d.h"
 
+class GameStartScene : public cocos2d::Layer
+{
+    
+};
+
 #endif /* defined(__Fighter__GameStartScene__) */
