@@ -27,8 +27,7 @@
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		4F7DE46718694D150014D361 /* GameStartScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F7DE46518694D150014D361 /* GameStartScene.cpp */; };
 		4F7DE46818694D150014D361 /* GameStartScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F7DE46518694D150014D361 /* GameStartScene.cpp */; };
-		4FA97E9F186C0C38005FB278 /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = 4FA97E9E186C0C38005FB278 /* Resources */; };
-		4FA97EA0186C0C38005FB278 /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = 4FA97E9E186C0C38005FB278 /* Resources */; };
+		4FA97EB0186C0FD2005FB278 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 4FA97EAF186C0FD2005FB278 /* images */; };
 		503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 503AE0F617EB97AB00D1A890 /* Icon.icns */; };
 		503AE10017EB989F00D1A890 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FB17EB989F00D1A890 /* AppController.mm */; };
 		503AE10117EB989F00D1A890 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FC17EB989F00D1A890 /* main.m */; };
@@ -263,7 +262,7 @@
 		4F7DE463186946360014D361 /* GameMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GameMacro.h; path = ../Classes/GameMacro.h; sourceTree = "<group>"; };
 		4F7DE46518694D150014D361 /* GameStartScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameStartScene.cpp; sourceTree = "<group>"; };
 		4F7DE46618694D150014D361 /* GameStartScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameStartScene.h; sourceTree = "<group>"; };
-		4FA97E9E186C0C38005FB278 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Resources; sourceTree = "<group>"; };
+		4FA97EAF186C0FD2005FB278 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
 		503AE0F617EB97AB00D1A890 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		503AE0F717EB97AB00D1A890 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		503AE0FA17EB989F00D1A890 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = ios/AppController.h; sourceTree = SOURCE_ROOT; };
@@ -507,7 +506,7 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4FA97E9E186C0C38005FB278 /* Resources */,
+				4FA97EAF186C0FD2005FB278 /* images */,
 				1AFAF8B916D35E4900DB1158 /* CloseNormal.png */,
 				1AFAF8BA16D35E4900DB1158 /* CloseSelected.png */,
 				1AFAF8BB16D35E4900DB1158 /* HelloWorld.png */,
@@ -708,11 +707,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FA97EB0186C0FD2005FB278 /* images in Resources */,
 				5087E78117EB970100C73F5D /* Icon-120.png in Resources */,
 				5087E78617EB970100C73F5D /* Icon-76.png in Resources */,
 				5087E77F17EB970100C73F5D /* Default@2x.png in Resources */,
 				50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */,
-				4FA97E9F186C0C38005FB278 /* Resources in Resources */,
 				1AFAF8BC16D35E4900DB1158 /* CloseNormal.png in Resources */,
 				5087E78317EB970100C73F5D /* Icon-152.png in Resources */,
 				5087E77D17EB970100C73F5D /* Default-568h@2x.png in Resources */,
@@ -739,7 +738,6 @@
 				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
 				5087E75417EB910900C73F5D /* CloseSelected.png in Resources */,
 				5087E75517EB910900C73F5D /* HelloWorld.png in Resources */,
-				4FA97EA0186C0C38005FB278 /* Resources in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
