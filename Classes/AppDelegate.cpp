@@ -40,9 +40,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     }
     
     pFileUtils->setSearchPaths(searchPaths);
-    
-    SpriteFrameCache::getInstance()->addSpriteFramesWithFile("sprites.plist");
-    
+        
     eglView->setDesignResolutionSize(320.0, 480.0, ResolutionPolicy::SHOW_ALL);
     
     // create a scene. it's an autorelease object
