@@ -24,6 +24,27 @@ bool AppDelegate::applicationDidFinishLaunching() {
     // set FPS. the default value is 1.0/60 if you don't call this
     director->setAnimationInterval(1.0 / 60);
 
+    auto pFileUtils = FileUtils::getInstance();
+    std::vector<std::string> searchPaths;
+    
+    if (director->getWinSize().width > 320)
+    {
+        searchPaths.push_back("images/hd");
+        
+        director->setContentScaleFactor(2.0);
+    }
+    else
+    {
+        searchPaths.push_back("images/sd");
+        
+    }
+    
+    pFileUtils->setSearchPaths(searchPaths);
+    
+    SpriteFrameCache::getInstance()->addSpriteFramesWithFile("sprites.plist");
+    
+    eglView->setDesignResolutionSize(320.0, 480.0, ResolutionPolicy::SHOW_ALL);
+    
     // create a scene. it's an autorelease object
     auto scene = HelloWorld::createScene();
 
