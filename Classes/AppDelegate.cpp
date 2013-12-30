@@ -39,6 +39,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
         
     }
     
+    searchPaths.push_back("ccb");
     pFileUtils->setSearchPaths(searchPaths);
         
     eglView->setDesignResolutionSize(320.0, 480.0, ResolutionPolicy::SHOW_ALL);
