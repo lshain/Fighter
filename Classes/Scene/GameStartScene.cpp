@@ -48,12 +48,17 @@ bool GameStartScene::onAssignCCBMemberVariable(Object * pTarget, const char * pM
     return false;
 }
 
-void MenuScene::playAction(Object *sender)
+void GameStartScene::startGame(cocos2d::Object *sender)
 {
-    Director::getInstance()->replaceScene(PickMapScene::createScene());
+    
 }
 
-void MenuScene::helpAction(cocos2d::Object *sender)
+void GameStartScene::openRanking(cocos2d::Object *sender)
+{
+    
+}
+
+void GameStartScene::openMoreGame(cocos2d::Object *sender)
 {
     
 }

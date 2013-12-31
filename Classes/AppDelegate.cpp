@@ -1,7 +1,11 @@
 #include "AppDelegate.h"
 #include "HelloWorldScene.h"
+#include "GameStartScene.h"
+#include "GameStartSceneLoader.h"
+#include "GameMacro.h"
 
 USING_NS_CC;
+USING_NS_CC_BUILDER;
 
 AppDelegate::AppDelegate() {
 
@@ -9,6 +13,11 @@ AppDelegate::AppDelegate() {
 
 AppDelegate::~AppDelegate() 
 {
+    SpriteFrameCache::getInstance()->removeSpriteFramesFromFile("Background1.plist");
+    SpriteFrameCache::getInstance()->removeSpriteFramesFromFile("Background2.plist");
+    SpriteFrameCache::getInstance()->removeSpriteFramesFromFile("Background3.plist");
+    SpriteFrameCache::getInstance()->removeSpriteFramesFromFile("mainMenu.plist");
+
 }
 
 bool AppDelegate::applicationDidFinishLaunching() {
@@ -41,14 +50,29 @@ bool AppDelegate::applicationDidFinishLaunching() {
     
     searchPaths.push_back("ccb");
     pFileUtils->setSearchPaths(searchPaths);
-        
-    eglView->setDesignResolutionSize(320.0, 480.0, ResolutionPolicy::SHOW_ALL);
     
-    // create a scene. it's an autorelease object
-    auto scene = HelloWorld::createScene();
+    auto screenSize = eglView->getFrameSize();
+    
+    if((screenSize.width / 320.0) > (screenSize.height / 480.0))
+        eglView->setDesignResolutionSize(320.0,480.0, ResolutionPolicy::SHOW_ALL);
+    else
+        eglView->setDesignResolutionSize(320.0, 480.0, ResolutionPolicy::FIXED_WIDTH);
+    
+    SpriteFrameCache::getInstance()->addSpriteFramesWithFile("Background1.plist");
+    SpriteFrameCache::getInstance()->addSpriteFramesWithFile("Background2.plist");
+    SpriteFrameCache::getInstance()->addSpriteFramesWithFile("Background3.plist");
+    SpriteFrameCache::getInstance()->addSpriteFramesWithFile("mainMenu.plist");
 
+    GameStartScene *gameStartScene = nullptr;
+    
+    NODE_CREATE_BY_CCB_START("GameStartScene", GameStartSceneLoader::loader(), "MainScene.ccbi", GameStartScene *, gameStartScene);
+    // create a scene. it's an autorelease object
+    auto scene = Scene::create();//HelloWorld::createScene();
+    scene->addChild(gameStartScene);
     // run
     director->runWithScene(scene);
+    
+    NODE_CREATE_BY_CCB_END;
 
     return true;
 }

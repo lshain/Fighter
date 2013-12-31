@@ -265,6 +265,7 @@
 		4F7DE46518694D150014D361 /* GameStartScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameStartScene.cpp; sourceTree = "<group>"; };
 		4F7DE46618694D150014D361 /* GameStartScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameStartScene.h; sourceTree = "<group>"; };
 		4F87F3211871192000CCDD7B /* ccb */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ccb; sourceTree = "<group>"; };
+		4F87F32D1872664900CCDD7B /* GameStartSceneLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameStartSceneLoader.h; sourceTree = "<group>"; };
 		4FA97EAF186C0FD2005FB278 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
 		503AE0F617EB97AB00D1A890 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		503AE0F717EB97AB00D1A890 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -456,6 +457,7 @@
 			children = (
 				4F7DE46518694D150014D361 /* GameStartScene.cpp */,
 				4F7DE46618694D150014D361 /* GameStartScene.h */,
+				4F87F32D1872664900CCDD7B /* GameStartSceneLoader.h */,
 			);
 			name = Scene;
 			path = ../Classes/Scene;
