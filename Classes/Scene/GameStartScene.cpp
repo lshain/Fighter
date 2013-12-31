@@ -8,6 +8,8 @@
 
 #include "GameStartScene.h"
 #include "GameMacro.h"
+#include "AirplaneSelectScene.h"
+#include "AirplaneSelectSceneLoader.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
@@ -50,7 +52,15 @@ bool GameStartScene::onAssignCCBMemberVariable(Object * pTarget, const char * pM
 
 void GameStartScene::startGame(cocos2d::Object *sender)
 {
+    AirplaneSelectScene *airplaneSelectScene = nullptr;
     
+    NODE_CREATE_BY_CCB_START("AirplaneSelectScene", AirplaneSelectSceneLoader::loader(), "PlayerSelect.ccbi", AirplaneSelectScene *, airplaneSelectScene);
+    // create a scene. it's an autorelease object
+    auto scene = Scene::create();//HelloWorld::createScene();
+    scene->addChild(airplaneSelectScene);
+    
+    Director::getInstance()->replaceScene(scene);
+    NODE_CREATE_BY_CCB_END;
 }
 
 void GameStartScene::openRanking(cocos2d::Object *sender)

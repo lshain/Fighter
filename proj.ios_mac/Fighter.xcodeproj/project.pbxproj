@@ -25,6 +25,8 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		4F1183F61872963B0019D259 /* AirplaneSelectScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F1183F41872963B0019D259 /* AirplaneSelectScene.cpp */; };
+		4F1183F71872963B0019D259 /* AirplaneSelectScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F1183F41872963B0019D259 /* AirplaneSelectScene.cpp */; };
 		4F7DE46718694D150014D361 /* GameStartScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F7DE46518694D150014D361 /* GameStartScene.cpp */; };
 		4F7DE46818694D150014D361 /* GameStartScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F7DE46518694D150014D361 /* GameStartScene.cpp */; };
 		4F87F3221871192000CCDD7B /* ccb in Resources */ = {isa = PBXBuildFile; fileRef = 4F87F3211871192000CCDD7B /* ccb */; };
@@ -261,6 +263,9 @@
 		1D6058910D05DD3D006BFB54 /* Fighter iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fighter iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4F1183F41872963B0019D259 /* AirplaneSelectScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AirplaneSelectScene.cpp; sourceTree = "<group>"; };
+		4F1183F51872963B0019D259 /* AirplaneSelectScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirplaneSelectScene.h; sourceTree = "<group>"; };
+		4F1183FF1872AC8E0019D259 /* AirplaneSelectSceneLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirplaneSelectSceneLoader.h; sourceTree = "<group>"; };
 		4F7DE463186946360014D361 /* GameMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GameMacro.h; path = ../Classes/GameMacro.h; sourceTree = "<group>"; };
 		4F7DE46518694D150014D361 /* GameStartScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameStartScene.cpp; sourceTree = "<group>"; };
 		4F7DE46618694D150014D361 /* GameStartScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameStartScene.h; sourceTree = "<group>"; };
@@ -458,6 +463,9 @@
 				4F7DE46518694D150014D361 /* GameStartScene.cpp */,
 				4F7DE46618694D150014D361 /* GameStartScene.h */,
 				4F87F32D1872664900CCDD7B /* GameStartSceneLoader.h */,
+				4F1183F41872963B0019D259 /* AirplaneSelectScene.cpp */,
+				4F1183F51872963B0019D259 /* AirplaneSelectScene.h */,
+				4F1183FF1872AC8E0019D259 /* AirplaneSelectSceneLoader.h */,
 			);
 			name = Scene;
 			path = ../Classes/Scene;
@@ -756,6 +764,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F1183F61872963B0019D259 /* AirplaneSelectScene.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				4F7DE46718694D150014D361 /* GameStartScene.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
@@ -771,6 +780,7 @@
 			files = (
 				5087E75717EB910900C73F5D /* AppDelegate.cpp in Sources */,
 				4F7DE46818694D150014D361 /* GameStartScene.cpp in Sources */,
+				4F1183F71872963B0019D259 /* AirplaneSelectScene.cpp in Sources */,
 				5087E75817EB910900C73F5D /* HelloWorldScene.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
 			);
