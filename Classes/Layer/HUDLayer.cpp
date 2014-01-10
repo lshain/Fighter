@@ -7,24 +7,13 @@
 //
 
 #include "HUDLayer.h"
+#include "HUDElemetRed.h"
+#include "HUDElementRedLoader.h"
+#include "GameMacro.h"
 
 USING_NS_CC;
-
-Scene* HUDLayer::createScene()
-{
-    // 'scene' is an autorelease object
-    auto scene = Scene::create();
-    
-    // 'layer' is an autorelease object
-    auto layer = HUDLayer::create();
-    
-    // add layer as a child to scene
-    scene->addChild(layer);
-    
-    // return the scene
-    return scene;
-}
-
+USING_NS_CC_EXT;
+USING_NS_CC_BUILDER;
 
 bool HUDLayer::init()
 {
@@ -34,6 +23,13 @@ bool HUDLayer::init()
     {
         return false;
     }
+    
+    HUDElemetRed *elemetRed = nullptr;
+    
+    NODE_CREATE_BY_CCB_START("HUDElemetRed", HUDElementRedLoader::loader(), "HUDElemetRed.ccbi", HUDElemetRed *, elemetRed);
+    // create a scene. it's an autorelease object
+    this->addChild(elemetRed);
+    NODE_CREATE_BY_CCB_END;
     
     return true;
 }
