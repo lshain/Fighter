@@ -23,6 +23,8 @@ public:
         
     // implement the "static create()" method manually
     CREATE_FUNC(GamePlayingScene);
+    
+    ~GamePlayingScene();
 };
 
 #endif /* defined(__Fighter__GamePlayingScene__) */

@@ -8,6 +8,7 @@
 
 #include "AirplaneSelectScene.h"
 #include "GameMacro.h"
+#include "GamePlayingScene.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
@@ -58,4 +59,8 @@ void AirplaneSelectScene::selectAirPlane(cocos2d::Object *sender)
     Node *airplane = dynamic_cast<Node *>(sender);
     
     CCLOG("tag = %d", airplane->getTag());
+    
+    auto scene = GamePlayingScene::createScene();
+    
+    Director::getInstance()->replaceScene(scene);
 }

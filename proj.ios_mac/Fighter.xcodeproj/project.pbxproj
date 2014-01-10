@@ -29,6 +29,8 @@
 		4F1183F71872963B0019D259 /* AirplaneSelectScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F1183F41872963B0019D259 /* AirplaneSelectScene.cpp */; };
 		4F558D7F187FE64C00171930 /* HUDLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F558D7D187FE64C00171930 /* HUDLayer.cpp */; };
 		4F558D80187FE64C00171930 /* HUDLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F558D7D187FE64C00171930 /* HUDLayer.cpp */; };
+		4F558D85187FEAC500171930 /* HUDElemetRed.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F558D83187FEAC500171930 /* HUDElemetRed.cpp */; };
+		4F558D96187FECCF00171930 /* HUDElemetRed.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F558D83187FEAC500171930 /* HUDElemetRed.cpp */; };
 		4F7DE46718694D150014D361 /* GameStartScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F7DE46518694D150014D361 /* GameStartScene.cpp */; };
 		4F7DE46818694D150014D361 /* GameStartScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F7DE46518694D150014D361 /* GameStartScene.cpp */; };
 		4F87F3221871192000CCDD7B /* ccb in Resources */ = {isa = PBXBuildFile; fileRef = 4F87F3211871192000CCDD7B /* ccb */; };
@@ -272,6 +274,9 @@
 		4F1183FF1872AC8E0019D259 /* AirplaneSelectSceneLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirplaneSelectSceneLoader.h; sourceTree = "<group>"; };
 		4F558D7D187FE64C00171930 /* HUDLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HUDLayer.cpp; sourceTree = "<group>"; };
 		4F558D7E187FE64C00171930 /* HUDLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUDLayer.h; sourceTree = "<group>"; };
+		4F558D83187FEAC500171930 /* HUDElemetRed.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HUDElemetRed.cpp; sourceTree = "<group>"; };
+		4F558D84187FEAC500171930 /* HUDElemetRed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUDElemetRed.h; sourceTree = "<group>"; };
+		4F558D98187FECFE00171930 /* HUDElementRedLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HUDElementRedLoader.h; sourceTree = "<group>"; };
 		4F7DE463186946360014D361 /* GameMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GameMacro.h; path = ../Classes/GameMacro.h; sourceTree = "<group>"; };
 		4F7DE46518694D150014D361 /* GameStartScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameStartScene.cpp; sourceTree = "<group>"; };
 		4F7DE46618694D150014D361 /* GameStartScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameStartScene.h; sourceTree = "<group>"; };
@@ -471,6 +476,9 @@
 			children = (
 				4F558D7D187FE64C00171930 /* HUDLayer.cpp */,
 				4F558D7E187FE64C00171930 /* HUDLayer.h */,
+				4F558D83187FEAC500171930 /* HUDElemetRed.cpp */,
+				4F558D84187FEAC500171930 /* HUDElemetRed.h */,
+				4F558D98187FECFE00171930 /* HUDElementRedLoader.h */,
 			);
 			name = Layer;
 			path = ../Classes/Layer;
@@ -788,6 +796,7 @@
 				4F1183F61872963B0019D259 /* AirplaneSelectScene.cpp in Sources */,
 				4FD7FE4E187FE03900D79D95 /* GamePlayingScene.cpp in Sources */,
 				4F558D7F187FE64C00171930 /* HUDLayer.cpp in Sources */,
+				4F558D85187FEAC500171930 /* HUDElemetRed.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				4F7DE46718694D150014D361 /* GameStartScene.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
@@ -801,6 +810,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F558D96187FECCF00171930 /* HUDElemetRed.cpp in Sources */,
 				5087E75717EB910900C73F5D /* AppDelegate.cpp in Sources */,
 				4F7DE46818694D150014D361 /* GameStartScene.cpp in Sources */,
 				4F1183F71872963B0019D259 /* AirplaneSelectScene.cpp in Sources */,

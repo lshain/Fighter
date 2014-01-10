@@ -7,6 +7,7 @@
 //
 
 #include "GamePlayingScene.h"
+#include "HUDLayer.h"
 
 USING_NS_CC;
 
@@ -35,5 +36,17 @@ bool GamePlayingScene::init()
         return false;
     }
     
+    SpriteFrameCache::getInstance()->addSpriteFramesWithFile("UIHudAndDrop.plist");
+    
+    HUDLayer *layer = HUDLayer::create();
+    layer->setPosition(Point(0.0, 0.0));
+    this->addChild(layer);
     return true;
 }
+
+GamePlayingScene::~GamePlayingScene()
+{
+    SpriteFrameCache::getInstance()->removeSpriteFramesFromFile("UIHudAndDrop.plist");
+}
+
+#pragma Private Methods
