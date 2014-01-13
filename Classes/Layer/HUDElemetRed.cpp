@@ -25,9 +25,9 @@ HUDElemetRed::~HUDElemetRed()
 
 SEL_MenuHandler HUDElemetRed::onResolveCCBCCMenuItemSelector(Object * pTarget, const char * pSelectorName) {
     
-//    CCB_SELECTORRESOLVER_CCMENUITEM_GLUE(this, "StartGame", GameStartScene::startGame);
-//    CCB_SELECTORRESOLVER_CCMENUITEM_GLUE(this, "Record", GameStartScene::openRanking);
-//    CCB_SELECTORRESOLVER_CCMENUITEM_GLUE(this, "MoreGame", GameStartScene::openMoreGame);
+    CCB_SELECTORRESOLVER_CCMENUITEM_GLUE(this, "playerChickNuke", HUDElemetRed::playerChickNuke);
+    CCB_SELECTORRESOLVER_CCMENUITEM_GLUE(this, "playerChickAddWeapon", HUDElemetRed::playerChickAddWeapon);
+    CCB_SELECTORRESOLVER_CCMENUITEM_GLUE(this, "pauseGame", HUDElemetRed::pauseGame);
     
     return NULL;
 }
@@ -51,4 +51,20 @@ bool HUDElemetRed::onAssignCCBMemberVariable(Object * pTarget, const char * pMem
 void HUDElemetRed::onEnterTransitionDidFinish()
 {
     Layer::onEnterTransitionDidFinish();
+}
+
+#pragma private Methods
+void HUDElemetRed::playerChickNuke(cocos2d::Object *obj)
+{
+    
+}
+
+void HUDElemetRed::playerChickAddWeapon(cocos2d::Object *obj)
+{
+    
+}
+
+void HUDElemetRed::pauseGame(cocos2d::Object *obj)
+{
+    
 }
