@@ -14,6 +14,7 @@ USING_NS_CC_EXT;
 USING_NS_CC_BUILDER;
 
 HUDElemetRed::HUDElemetRed()
+:_pointLabel(nullptr)
 {
     
 }
@@ -44,6 +45,7 @@ SEL_CallFuncN HUDElemetRed::onResolveCCBCCCallFuncSelector(Object * pTarget, con
 
 bool HUDElemetRed::onAssignCCBMemberVariable(Object * pTarget, const char * pMemberVariableName, Node * pNode) {
     
+    CCB_MEMBERVARIABLEASSIGNER_GLUE(this, "pointLabel", LabelTTF *, _pointLabel);
     
     return false;
 }
@@ -51,6 +53,11 @@ bool HUDElemetRed::onAssignCCBMemberVariable(Object * pTarget, const char * pMem
 void HUDElemetRed::onEnterTransitionDidFinish()
 {
     Layer::onEnterTransitionDidFinish();
+}
+
+void HUDElemetRed::setPoint(unsigned int point)
+{
+    _pointLabel->setString(String::createWithFormat("%d", point)->getCString());
 }
 
 #pragma private Methods

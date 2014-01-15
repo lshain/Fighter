@@ -30,6 +30,6 @@ bool HUDLayer::init()
     // create a scene. it's an autorelease object
     this->addChild(elemetRed);
     NODE_CREATE_BY_CCB_END;
-    
+    elemetRed->setPoint(0);
     return true;
 }
