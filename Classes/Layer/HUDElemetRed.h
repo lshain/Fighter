@@ -27,11 +27,15 @@ public:
     virtual bool onAssignCCBMemberVariable(cocos2d::Object * pTarget, const char * pMemberVariableName, cocos2d::Node * pNode);
     
     virtual void onEnterTransitionDidFinish();
+    void setPoint(unsigned int point);
     
 private:
     void playerChickNuke(cocos2d::Object *obj);
     void playerChickAddWeapon(cocos2d::Object *obj);
     void pauseGame(cocos2d::Object *obj);
+    
+private:
+    cocos2d::LabelTTF *_pointLabel;
     
 };
 #endif /* defined(__Fighter__HUDElemetRed__) */
