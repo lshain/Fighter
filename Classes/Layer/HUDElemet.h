@@ -6,20 +6,20 @@
 //
 //
 
-#ifndef __Fighter__HUDElemetRed__
-#define __Fighter__HUDElemetRed__
+#ifndef __Fighter__HUDElemet__
+#define __Fighter__HUDElemet__
 
 #include <iostream>
 #include "cocos2d.h"
 #include "cocosbuilder/CocosBuilder.h"
 
-class HUDElemetRed : public cocos2d::Layer, public cocosbuilder::CCBSelectorResolver, public cocosbuilder::CCBMemberVariableAssigner
+class HUDElemet : public cocos2d::Layer, public cocosbuilder::CCBSelectorResolver, public cocosbuilder::CCBMemberVariableAssigner
 {
 public:
-    CCB_STATIC_NEW_AUTORELEASE_OBJECT_WITH_INIT_METHOD(HUDElemetRed, create);
+    CCB_STATIC_NEW_AUTORELEASE_OBJECT_WITH_INIT_METHOD(HUDElemet, create);
     
-    HUDElemetRed();
-    virtual ~HUDElemetRed();
+    HUDElemet();
+    virtual ~HUDElemet();
     
     virtual cocos2d::SEL_MenuHandler onResolveCCBCCMenuItemSelector(cocos2d::Object * pTarget, const char * pSelectorName);
     virtual cocos2d::extension::Control::Handler onResolveCCBCCControlSelector(cocos2d::Object * pTarget, const char * pSelectorName);
