@@ -8,6 +8,8 @@
 
 #include "GamePlayingScene.h"
 #include "HUDLayer.h"
+#include "GameMacro.h"
+#include "PlayingBackgroundLayer.h"
 
 USING_NS_CC;
 
@@ -35,6 +37,12 @@ bool GamePlayingScene::init()
     {
         return false;
     }
+    
+    PlayingBackgroundLayer *background = PlayingBackgroundLayer::create();
+    background->setLevel(3);
+    background->setPosition(Point(0.0, 0.0));
+    background->setTag(BackgroundTag);
+    this->addChild(background);
     
     SpriteFrameCache::getInstance()->addSpriteFramesWithFile("UIHudAndDrop.plist");
     

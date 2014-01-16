@@ -21,4 +21,5 @@ VARIABLE = dynamic_cast<VARIABLETYPE>(ccbReader->readNodeGraphFromFile(FILENAME)
 
 #define NODE_CREATE_BY_CCB_END ccbReader->release();
 
+#define BackgroundTag 991
 #endif
